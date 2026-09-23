@@ -1,0 +1,143 @@
+:root {
+  --primary: #003366;
+  --secondary: #0055a5;
+  --accent: #28a745;
+  --text: #2b2b2b;
+  --bg-light: #f8f9fa;
+  --border: #e2e8f0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background-color: #fff;
+}
+
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1.5rem 1rem;
+}
+
+.header-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+nav {
+  background: #002244;
+  border-bottom: 3px solid var(--secondary);
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+nav a:hover, nav a.active {
+  background: var(--secondary);
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+h3 {
+  color: var(--secondary);
+  margin: 1rem 0 0.4rem 0;
+  font-size: 1.1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.2rem;
+  background: var(--bg-light);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  background: var(--primary);
+  border-radius: 3px;
+  margin-right: 0.4rem;
+}
+
+.badge.q1 { background: var(--accent); }
+.badge.core { background: #6f42c1; }
+
+ul {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+.pub-item {
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background: var(--bg-light);
+  border-top: 1px solid var(--border);
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 3rem;
+}
